@@ -1,0 +1,93 @@
+/* Home.module.css */
+
+.main {
+    width: 100%;
+    height: auto;
+    background-color: black;
+    padding: 20px;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Iceland';
+    color: wheat;
+  }
+  
+  .herosection {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .welcome {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+     }
+  
+  .left, .right {
+    flex: 1;
+  }
+  
+  .left {
+    max-width: 800px;
+  }
+  
+  .right {
+    max-width: 600px;
+  }
+  
+  .head {
+    font-size: 4rem;
+  }
+  
+  .matter {
+    font-size: 1.6rem;
+  }
+ 
+  .section {
+    margin-top: 20px;
+  }
+  
+  .sectionHead {
+    padding: 10px;
+    margin: 6px 0;
+    color: #af125a;
+    font-size: 3rem;
+  }
+
+  
+  .boxlist {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+  
+  .footer {
+    margin-top: 20px;
+    color: white;
+  }
+  
+  @media  (max-width: 1000px) {
+    .welcome {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .left, .right {
+      max-width: 100%;
+    }
+  
+    .head {
+      font-size: 1.5rem;
+    }
+  
+    .matter {
+      font-size: 1rem;
+    }
+  
+    .sectionHead {
+      font-size: 1.5rem;
+    }
+  }
+  

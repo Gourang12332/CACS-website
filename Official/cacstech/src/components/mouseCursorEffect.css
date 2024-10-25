@@ -1,0 +1,82 @@
+
+
+
+.cursor{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    background-color: rgba(144, 70, 254, 0.6);
+    opacity: 0;
+    z-index: 10000;
+    user-select: none;
+    pointer-events: none;
+}
+
+
+.btn{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.btn button{
+    padding: 10px;
+    border: solid 1px white;
+    color: white;
+    background-color: #181818;
+    border-radius: 20px;
+    
+}
+
+
+.btnShape{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    background-color: rgba(254, 70, 116, 0.6);
+
+    opacity: 0;
+    
+    user-select: none;
+    pointer-events: none;
+}
+
+
+
+
+.play{
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    background-color: rgba(254, 70, 116, 0.6);
+}
+
+
+
+
+
+
+
+
+
+
+.parent {
+    position: relative;
+    width: 400px;
+    height: 400px;
+    border: 1px solid black;
+    overflow: hidden; /* Ensure anything outside is hidden */
+    clip-path: inset(0);
+  }
+  
+  .child {
+    position: absolute;
+    left: 50px; /* Adjust based on desired position */
+    top: 50px; /* Adjust based on desired position */
+  }
