@@ -1,14 +1,13 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    reactStrictMode: false
+    reactStrictMode: false,
+    eslint: {
+        // This option allows you to disable ESLint during build time
+        ignoreDuringBuilds: true,
+      },
 };
 
-module.exports = {
-    eslint: {
-      ignoreDuringBuilds: true, // This will ignore ESLint errors during the build
-    },
-  };
-  
+
 
 
 
