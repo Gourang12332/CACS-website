@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import React, { useState, useEffect } from "react";
-
+import Link from "next/link";
 
 
 const letterAnimation = {
@@ -40,7 +40,7 @@ const Landing = () => {
 
       if (cycleCount >= 3) {
         clearInterval(interval);
-        window.location.href = "http://localhost:3000/Home";
+       <Link href="/Home"></Link>
       }
     }, 1600); // Faster cycle time
     return () => clearInterval(interval);
