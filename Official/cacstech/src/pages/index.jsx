@@ -38,7 +38,7 @@ const Landing = () => {
       setCycleCount((prev) => prev + 1);
     }, 1600);
 
-    if (cycleCount >= 2) {
+    if (cycleCount >= 3) {
       clearInterval(interval);
       router.push('/Home');
     }
