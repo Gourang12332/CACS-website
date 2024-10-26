@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import React, { useState, useEffect } from "react";
-import Link from "next/link";
+import { useRouter } from "next/router";
 
 
 const letterAnimation = {
@@ -30,21 +30,21 @@ const Landing = () => {
   const letters = ["C", "A", "C", "S"];
   const [isVisible, setIsVisible] = useState(true);
   const [cycleCount, setCycleCount] = useState(0);
-   
+  const router = useRouter();
 
   useEffect(() => {
     const interval = setInterval(() => {
       setIsVisible((prev) => !prev);
-     
       setCycleCount((prev) => prev + 1);
+    }, 1600);
 
-      if (cycleCount >= 3) {
-        clearInterval(interval);
-       <Link href="/Home"></Link>
-      }
-    }, 1600); // Faster cycle time
+    if (cycleCount >= 2) {
+      clearInterval(interval);
+      router.push('/Home');
+    }
+
     return () => clearInterval(interval);
-  }, [cycleCount]);
+  }, [cycleCount, router]);
 
   return (
     <motion.main
