@@ -19,15 +19,15 @@ export default function Footer() {
             <MDBIcon fab icon='facebook-f' />
           </MDBBtn>
 
-          <MDBBtn outline color="light" floating className='m-1' href='#!' role='button'>
+          <MDBBtn outline color="light" floating  className='m-1' href='#!' role='button'>
             <MDBIcon fab icon='twitter' />
           </MDBBtn>
 
-          <MDBBtn outline color="light" floating className='m-1' href='https://www.google.com/search?q=cacs+instagram+iiitkota&rlz=1C1VDKB_en-gbIN1071IN1071&oq=cacs&gs_lcrp=EgZjaHJvbWUqCAgAEEUYJxg7MggIABBFGCcYOzIICAEQRRgnGDsyEQgCEEUYFBg5GIcCGLEDGIAEMg0IAxAuGJECGIAEGIoFMgwIBBAAGBQYhwIYgAQyBggFEEUYPDIGCAYQRRg8MgYIBxBFGDzSAQgxNTk3ajBqNKgCALACAQ&sourceid=chrome&ie=UTF-8' role='button'>
+          <MDBBtn outline color="light" floating target="_blank" className='m-1' href='https://www.google.com/search?q=cacs+instagram+iiitkota&rlz=1C1VDKB_en-gbIN1071IN1071&oq=cacs&gs_lcrp=EgZjaHJvbWUqCAgAEEUYJxg7MggIABBFGCcYOzIICAEQRRgnGDsyEQgCEEUYFBg5GIcCGLEDGIAEMg0IAxAuGJECGIAEGIoFMgwIBBAAGBQYhwIYgAQyBggFEEUYPDIGCAYQRRg8MgYIBxBFGDzSAQgxNTk3ajBqNKgCALACAQ&sourceid=chrome&ie=UTF-8' role='button'>
             <MDBIcon fab icon='google' />
           </MDBBtn>
 
-          <MDBBtn outline color="light" floating className='m-1' href='https://www.instagram.com/cacs_iiitkota/' role='button'>
+          <MDBBtn outline color="light" floating target="_blank" className='m-1' target ='_blank' href='https://www.instagram.com/cacs_iiitkota/' role='button'>
             <MDBIcon fab icon='instagram' />
           </MDBBtn>
 
