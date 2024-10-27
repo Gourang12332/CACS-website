@@ -9,7 +9,7 @@ export default function FormElementContactUs() {
         name="name"
         id="name"
         placeholder="Enter Your name"
-        className="input-primary p-2 w-80 rounded-md text-gray-900 w-full max-w-xl"
+        className="input-primary p-2 w-80 rounded-md text-gray-900  max-w-xl"
       />
 
       <label htmlFor="email" className="mt-4 text-white font-bold text-xl md:text-2xl">
@@ -20,7 +20,7 @@ export default function FormElementContactUs() {
         name="email"
         id="email"
         placeholder="Enter Your email"
-        className="input-primary p-2 rounded-md text-gray-900 w-full max-w-xl"
+        className="input-primary p-2 w-80 rounded-md text-gray-900  max-w-xl"
       />
 
       <label htmlFor="message" className="mt-4 text-white font-bold text-xl md:text-2xl">
@@ -31,12 +31,12 @@ export default function FormElementContactUs() {
         id="message"
         placeholder="Your Message"
         rows={6}
-        className="input-primary p-2 rounded-md text-gray-900 w-full max-w-xl"
+        className="input-primary p-2 w-80 rounded-md text-gray-900  max-w-xl"
       />
 
       <button
         type="submit"
-        className="bg-orangebutton text-white p-3 rounded-md mt-6 w-full max-w-lg hover:bg-orange-400"
+        className="bg-orangebutton text-white p-3 rounded-md mt-6  max-w-lg hover:bg-orange-400"
       >
         Send Message
       </button>
