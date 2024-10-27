@@ -8,16 +8,14 @@ export const Upcomings = (props) => {
 
     const evestyle = {
     margin: "6px",
-    height: "6.8rem",
+    height: "7.9rem",
     padding: "4px",
     display: "flex",
     justifyContent: "space-between",
     backgroundColor: "#403b4d",
     borderRadius: "8px",
-    overflow : "scroll",
-    overflowX : "hidden",
-    overflowY : "hidden"
-  };
+    overflow : "scroll"
+    };
 
   const upstyles = { border: "10px", borderColor: "red" };
 
@@ -69,10 +67,10 @@ export const Upcomings = (props) => {
     whileHover={{ scale: 1.02, boxShadow: "0px 0px 15px rgba(255,255,255,0.7)" }} // Hover effect
   >
     <img
-      src= {props.imgsrc1}
+      src= {props.imgsrc1 }
       alt=""
       style={{
-        width: "12%",
+        width: "11rem",
         height: "130%",
         borderRadius: "8px",
         objectFit: "fit",
@@ -108,7 +106,7 @@ export const Upcomings = (props) => {
       src={props.imgsrc2}
       alt=""
       style={{
-        width: "12%",
+        width: "11rem",
         height: "130%",
         borderRadius: "8px",
         objectFit: "fit",
@@ -144,12 +142,12 @@ export const Upcomings = (props) => {
       src={props.imgsrc3}
       alt=""
       style={{
-        width: "12%",
+        width: "11rem",
         height: "130%",
         borderRadius: "8px",
         objectFit: "fill",
         border: "2px solid white",
-      }}
+        }}
     />
     <p
       style={{

@@ -83,6 +83,7 @@ const evestyle = {
         borderRadius: "8px",
         objectFit: "cover",
         border: "0px solid white",
+        overflow : "scroll"
       }}
     />
     <div

@@ -1,7 +1,7 @@
 .cards {
   width: 300px;
   height: 200px;
-  perspective: 200px; 
+  perspective: 1000px; 
   width: 20%;
  margin: 10px;
  font-size: larger;
@@ -65,4 +65,24 @@
   font-size: 1rem;
   text-align: center;
   padding: 20px;
+}
+@media (max-width : 600px) {
+  .cards{
+      width:90%;
+      font-size: medium;
+  }
+  .back{
+    object-fit: cover;
+    font-size: medium;
+  }
+  
+}
+@media (min-width : 601px) and (max-width : 1000px) {
+  .cards{
+      width:33%;
+  }
+  .back{
+     padding-top: 190px;
+    font-size: small;
+  }
 }

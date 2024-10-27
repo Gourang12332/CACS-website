@@ -7,7 +7,8 @@ export const Teamcard = (props) => {
       <div className={styles.inner}>
         <div className={styles.front}> 
           <div className={styles.left}> 
-            <p>{props.para}</p>
+            <p>{props.name}</p>
+            <p style={{color:"wheat"}}>{props.post}</p>
           </div>
           <div className={styles.right}> 
             <img src={props.imgsrc} alt="" style={{borderRadius : "10px"}} />

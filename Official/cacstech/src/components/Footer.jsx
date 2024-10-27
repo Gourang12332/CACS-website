@@ -82,7 +82,7 @@ export default function Footer() {
              <MDBCol lg='3' md='6' className='mb-4 mb-md-0'>
                   <ul className='list-unstyled mb-0'>
                 <li>
-                <a style={{textDecoration : "none"}} href="tel:0744-2667000" class="text-white" target="_blank" rel="noopener noreferrer">0744-2667000, 0744-2667010</a>
+                <a style={{textDecoration : "none"}} href="tel:0744-2667000" class="text-white" target="_blank" rel="noopener noreferrer">+91 78509 82929, +91 93136 77785</a>
                 </li>
                 <li>
                 <a style={{textDecoration : "none"}} href="https://g.page/MNITJ?share" class="text-white" target="_blank" rel="noopener noreferrer">MNIT Office, Jaipur, 302017</a>
@@ -93,10 +93,10 @@ export default function Footer() {
             <MDBCol lg='3' md='6' className='mb-4 mb-md-0'>
               <ul className='list-unstyled mb-0'>
                 <li>
-                <a style={{textDecoration : "none"}} href="tel: 0141-2715071" class="text-white" target="_blank" rel="noopener noreferrer"> 0141-2715071</a>
+                <a style={{textDecoration : "none"}} href="tel: 0141-2715071" class="text-white" target="_blank" rel="noopener noreferrer">+91 73405 23775</a>
                 </li>
                 <li>
-                <a style={{textDecoration : "none"}} href="mailto:office@iiitkota.ac.in" target="_blank" rel="noopener noreferrer" class="text-white">office@iiitkota.ac.in</a>
+                <a style={{textDecoration : "none"}} href="mailto:cacs@iiitkota.ac.in" target="_blank" rel="noopener noreferrer" class="text-white">cacs@iiitkota.ac.in</a>
                 </li>
               </ul>
             </MDBCol>

@@ -168,7 +168,7 @@ export default function Clubs() {
                     <Cards name={clubData[4].name} tagline={clubData[4].tagline} description={clubData[4].desc} imgSrc={clubData[4].imgSrc} insta={clubData[4].insta} />
                     <Cards name={clubData[5].name} tagline={clubData[5].tagline} description={clubData[5].desc} imgSrc={clubData[5].imgSrc} insta={clubData[5].insta} />
                     <Cards name={clubData[6].name} tagline={clubData[6].tagline} description={clubData[6].desc} imgSrc={clubData[6].imgSrc} insta={clubData[6].insta} />
-                    <Cards name={clubData[7].name} tagline={clubData[7].tagline} description={clubData[7].desc} imgSrc={clubData[7].imgSrc} insta={clubData[7].insta} />
+                    {/* <Cards name={clubData[7].name} tagline={clubData[7].tagline} description={clubData[7].desc} imgSrc={clubData[7].imgSrc} insta={clubData[7].insta} /> */}
                     <Cards name={clubData[8].name} tagline={clubData[8].tagline} description={clubData[8].desc} imgSrc={clubData[8].imgSrc} insta={clubData[8].insta} /> 
 
 
