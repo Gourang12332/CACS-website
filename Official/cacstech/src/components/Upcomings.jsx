@@ -17,7 +17,6 @@ export const Upcomings = (props) => {
 
   const upstyles = { border: "10px", borderColor: "red" };
 
-  // Intersection Observer to detect scrolling
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
@@ -26,7 +25,7 @@ export const Upcomings = (props) => {
           controls.start("visible");
         }
       },
-      { threshold: 0.2 } // Trigger when 20% of the component is visible
+      { threshold: 0.2 }
     );
     if (ref.current) {
       observer.observe(ref.current);
@@ -39,21 +38,22 @@ export const Upcomings = (props) => {
     };
   }, [controls]);
 
-  // Framer Motion variants for left and right animations
-  const leftSlide = {
-    hidden: { opacity: 0, x: -200 },
-    visible: { opacity: 1, x: 0, transition: { duration: 0.7 } },
-  };
-
-  const rightSlide = {
-    hidden: { opacity: 0, x: 200 },
-    visible: { opacity: 1, x: 0, transition: { duration: 0.7 } },
+  const fadeInScaleRotate = {
+    hidden: { opacity: 0, scale: 0.8, rotate: -10 },
+    visible: (index) => ({
+      opacity: 1,
+      scale: 1,
+      rotate: 0,
+      transition: {
+        duration: 0.7,
+        delay: index * 0.3,
+      },
+    }),
   };
 
   return (
     <div className="uplists" style={upstyles} ref={ref}>
       <ol style={{ listStyle: "none" }}>
-        
         {[props.imgsrc1, props.imgsrc2, props.imgsrc3].map((imgSrc, index) => (
           <li key={index}>
             <motion.div
@@ -61,15 +61,15 @@ export const Upcomings = (props) => {
               style={{ ...evestyle }}
               initial="hidden"
               animate={controls}
-              variants={index % 2 === 0 ? leftSlide : rightSlide}
-              whileHover={{ scale: 1.02, boxShadow: "0px 0px 15px rgba(255,255,255,0.7)" }}
+              variants={fadeInScaleRotate}
+              custom={index}
             >
               <img
                 src={imgSrc}
                 alt=""
                 style={{
-                  width: "9rem", // Adjusted width
-                  height: "8rem", // Adjusted height for smaller display
+                  width: "9rem",
+                  height: "8rem",
                   borderRadius: "8px",
                   objectFit: "cover",
                   border: "2px solid white",
@@ -82,7 +82,7 @@ export const Upcomings = (props) => {
                   width: "100%",
                   maxWidth: "85%",
                   color: "white",
-                  fontSize: "1.4rem", // Slightly smaller font for compactness
+                  fontSize: "1.4rem",
                   textAlign: "left",
                   letterSpacing: "0.05rem",
                   lineHeight: "1.5",
@@ -95,7 +95,6 @@ export const Upcomings = (props) => {
             </motion.div>
           </li>
         ))}
-        
       </ol>
     </div>
   );

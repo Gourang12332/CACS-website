@@ -9,7 +9,7 @@ export default function FormElementContactUs() {
         name="name"
         id="name"
         placeholder="Enter Your name"
-        className="input-primary p-4 px-40 rounded-md text-gray-900 w-full max-w-xl"
+        className="input-primary p-2 w-80 rounded-md text-gray-900 w-full max-w-xl"
       />
 
       <label htmlFor="email" className="mt-4 text-white font-bold text-xl md:text-2xl">
