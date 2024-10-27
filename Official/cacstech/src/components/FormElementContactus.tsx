@@ -8,7 +8,7 @@ export default function FormElementContactUs() {
         type="text"
         name="name"
         id="name"
-        placeholder="A"
+        placeholder="Enter your name"
         className="input-primary p-4 px-40 rounded-md text-gray-900 w-full max-w-xl"
       />
 
