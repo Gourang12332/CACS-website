@@ -8,7 +8,7 @@ export default function ContactUs() {
     return (
         <>
         <Navbar></Navbar>
-    <div className="flex flex-col items-center gap-32">
+    <div className="flex flex-col items-center gap-32" style={{border : "1px solid white"}}>
         <HeroContactUs/>
         <FormElementContactUs/>
         <br />

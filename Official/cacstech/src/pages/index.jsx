@@ -2,15 +2,14 @@ import { motion } from "framer-motion";
 import React, { useState, useEffect } from "react";
 import { useRouter } from "next/router";
 
-
 const letterAnimation = {
   hidden: { opacity: 0, y: 50 },
   visible: (i) => ({
     opacity: 1,
     y: 0,
     transition: {
-      delay: i * 0.2, // Faster appearance of letters
-      duration: 0.4,  // Shortened duration for quicker animation
+      delay: i * 0.2,
+      duration: 0.4,
     },
   }),
 };
@@ -19,7 +18,7 @@ const rotatingShapeAnimation = {
   rotate: {
     rotate: 360,
     transition: {
-      duration: 10, // Faster rotation speed for the background
+      duration: 10,
       repeat: Infinity,
       ease: "linear",
     },
@@ -59,7 +58,6 @@ const Landing = () => {
         backgroundColor: "#000",
       }}
     >
-      {/* Rotating Background Effect */}
       <motion.div
         animate="rotate"
         variants={rotatingShapeAnimation}
@@ -68,29 +66,31 @@ const Landing = () => {
           width: "150%",
           height: "150%",
           background: "radial-gradient(circle, transparent, rgba(255, 255, 255, 0.1))",
-          clipPath: "polygon(50% 0%, 65% 35%, 100% 50%, 65% 65%, 50% 100%, 35% 65%, 0% 50%, 35% 35%)", 
+          clipPath: "polygon(50% 0%, 65% 35%, 100% 50%, 65% 65%, 50% 100%, 35% 65%, 0% 50%, 35% 35%)",
           opacity: 0.2,
           filter: "blur(80px)",
         }}
       />
 
-      {/* Letters Animation */}
       <div
         style={{
           display: "flex",
           justifyContent: "center",
           alignItems: "center",
-          height: "800px",
-          width: "1000px",
+          flexDirection: "column",
+          height: "80vh",
+          width: "100%",
+          textAlign: "center",
         }}
       >
         <div
           style={{
             position: "relative",
-            fontSize: "10rem",
+            fontSize: "10vw",
             fontWeight: "bold",
             color: "gray",
             display: "flex",
+            justifyContent: "center",
           }}
         >
           {letters.map((letter, i) => (
@@ -100,12 +100,10 @@ const Landing = () => {
               initial="hidden"
               animate={isVisible ? "visible" : "hidden"}
               variants={letterAnimation}
-              style={{ position: "relative", margin: "0 20px", color: "#af125a",fontFamily : "Iceland" }}
+              style={{ position: "relative", margin: "0 10px", color: "#af125a", fontFamily: "Iceland" }}
             >
-              
               {letter}
 
-              {/* Top white line */}
               <motion.div
                 initial={{ scaleX: 0 }}
                 animate={{ scaleX: 1 }}
@@ -117,7 +115,7 @@ const Landing = () => {
                 }}
                 style={{
                   position: "absolute",
-                  top: "-10px",
+                  top: "-10%",
                   left: 0,
                   right: 0,
                   height: "2px",
@@ -125,7 +123,6 @@ const Landing = () => {
                   transformOrigin: "left center",
                 }}
               />
-              {/* Bottom white line */}
               <motion.div
                 initial={{ scaleX: 0 }}
                 animate={{ scaleX: 1 }}
@@ -137,7 +134,7 @@ const Landing = () => {
                 }}
                 style={{
                   position: "absolute",
-                  bottom: "-10px",
+                  bottom: "-10%",
                   left: 0,
                   right: 0,
                   height: "2px",
@@ -145,7 +142,6 @@ const Landing = () => {
                   transformOrigin: "right center",
                 }}
               />
-              {/* Left vertical line */}
               <motion.div
                 initial={{ scaleY: 0 }}
                 animate={{ scaleY: 1 }}
@@ -159,13 +155,12 @@ const Landing = () => {
                   position: "absolute",
                   top: 0,
                   bottom: 0,
-                  left: "-10px",
+                  left: "-10%",
                   width: "2px",
                   backgroundColor: "white",
                   transformOrigin: "top center",
                 }}
               />
-              {/* Right vertical line */}
               <motion.div
                 initial={{ scaleY: 0 }}
                 animate={{ scaleY: 1 }}
@@ -179,7 +174,7 @@ const Landing = () => {
                   position: "absolute",
                   top: 0,
                   bottom: 0,
-                  right: "-10px",
+                  right: "-10%",
                   width: "2px",
                   backgroundColor: "red",
                   transformOrigin: "bottom center",
