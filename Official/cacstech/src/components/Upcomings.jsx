@@ -6,16 +6,14 @@ export const Upcomings = (props) => {
   const [elementInView, setElementInView] = useState(false);
   const ref = useRef(null);
 
-    const evestyle = {
+  const evestyle = {
     margin: "6px",
-    height: "7.9rem",
     padding: "4px",
     display: "flex",
     justifyContent: "space-between",
     backgroundColor: "#403b4d",
     borderRadius: "8px",
-    overflow : "scroll"
-    };
+  };
 
   const upstyles = { border: "10px", borderColor: "red" };
 
@@ -53,121 +51,52 @@ export const Upcomings = (props) => {
   };
 
   return (
-    <>
-      <div className="uplists" style={upstyles} ref={ref}>
-        <ol style={{ listStyle: "none" }}>
-          
-          <li>
-  <motion.div
-    className="events shadow-lg rounded-lg flex items-center justify-between p-4"
-    style={evestyle}
-    initial="hidden"
-    animate={controls}
-    variants={leftSlide} // Slide in from left
-    whileHover={{ scale: 1.02, boxShadow: "0px 0px 15px rgba(255,255,255,0.7)" }} // Hover effect
-  >
-    <img
-      src= {props.imgsrc1 }
-      alt=""
-      style={{
-        width: "11rem",
-        height: "130%",
-        borderRadius: "8px",
-        objectFit: "fit",
-        border: "2px solid white",
-      }}
-    />
-    <p
-      style={{
-        width: "85%",
-        margin: "0 16px",
-        color: "white",
-        fontSize: "1.5rem",
-        textAlign: "left",
-        letterSpacing: "0.05rem",
-        lineHeight: "1.6",
-      }}
-    >
-    {props.desc1}
-    </p>
-  </motion.div>
-</li>
-
-<li>
-  <motion.div
-    className="events shadow-lg rounded-lg flex items-center justify-between p-4"
-    style={evestyle}
-    initial="hidden"
-    animate={controls}
-    variants={rightSlide} // Slide in from right
-    whileHover={{ scale: 1.02, boxShadow: "0px 0px 15px rgba(255,255,255,0.7)" }} // Hover effect
-  >
-    <img
-      src={props.imgsrc2}
-      alt=""
-      style={{
-        width: "11rem",
-        height: "130%",
-        borderRadius: "8px",
-        objectFit: "fit",
-        border: "2px solid white",
-      }}
-    />
-    <p
-      style={{
-        width: "85%",
-        margin: "0 16px",
-        color: "white",
-        fontSize: "1.5rem",
-        textAlign: "left",
-        letterSpacing: "0.05rem",
-        lineHeight: "1.6",
-      }}
-    >
-      {props.desc2}
-    </p>
-  </motion.div>
-</li>
-
-<li>
-  <motion.div
-    className="events shadow-lg rounded-lg flex items-center justify-between p-4"
-    style={evestyle}
-    initial="hidden"
-    animate={controls}
-    variants={leftSlide} // Slide in from left again
-    whileHover={{ scale: 1.02, boxShadow: "0px 0px 15px rgba(255,255,255,0.7)" }} // Hover effect
-   >
-    <img
-      src={props.imgsrc3}
-      alt=""
-      style={{
-        width: "11rem",
-        height: "130%",
-        borderRadius: "8px",
-        objectFit: "fill",
-        border: "2px solid white",
-        }}
-    />
-    <p
-      style={{
-        width: "85%",
-        margin: "0 16px",
-        color: "white",
-        fontSize: "1.5rem",
-        textAlign: "left",
-        letterSpacing: "0.05rem",
-        lineHeight: "1.6",
-      }}
-    >
-      {props.desc3}
-    </p>
-  </motion.div>
-</li>
-
-          
-        </ol>
-      </div>
-    </>
+    <div className="uplists" style={upstyles} ref={ref}>
+      <ol style={{ listStyle: "none" }}>
+        
+        {[props.imgsrc1, props.imgsrc2, props.imgsrc3].map((imgSrc, index) => (
+          <li key={index}>
+            <motion.div
+              className="events shadow-lg rounded-lg flex flex-col sm:flex-row items-center justify-between p-3"
+              style={{ ...evestyle }}
+              initial="hidden"
+              animate={controls}
+              variants={index % 2 === 0 ? leftSlide : rightSlide}
+              whileHover={{ scale: 1.02, boxShadow: "0px 0px 15px rgba(255,255,255,0.7)" }}
+            >
+              <img
+                src={imgSrc}
+                alt=""
+                style={{
+                  width: "9rem", // Adjusted width
+                  height: "8rem", // Adjusted height for smaller display
+                  borderRadius: "8px",
+                  objectFit: "cover",
+                  border: "2px solid white",
+                  marginBottom: "8px",
+                }}
+                className="sm:mb-0"
+              />
+              <p
+                style={{
+                  width: "100%",
+                  maxWidth: "85%",
+                  color: "white",
+                  fontSize: "1.4rem", // Slightly smaller font for compactness
+                  textAlign: "left",
+                  letterSpacing: "0.05rem",
+                  lineHeight: "1.5",
+                  overflowY: "auto",
+                }}
+                className="mt-2 sm:mt-0"
+              >
+                {index === 0 ? props.desc1 : index === 1 ? props.desc2 : props.desc3}
+              </p>
+            </motion.div>
+          </li>
+        ))}
+        
+      </ol>
+    </div>
   );
 };

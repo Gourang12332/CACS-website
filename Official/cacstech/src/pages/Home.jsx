@@ -65,52 +65,43 @@ const evestyle = {
   <div className={styles.sectionHead}>
     <p>Upcoming Events</p>
   </div>
-  <a href="https://www.canva.com/design/DAF94L46ZcE/gz6iRJ1uMyGlIAOXZ2JkIg/edit" style={{textDecoration : "none"}}>
+  <a href="https://www.canva.com/design/DAF94L46ZcE/gz6iRJ1uMyGlIAOXZ2JkIg/edit" style={{ textDecoration: "none" }}>
   <motion.div
-     className="events bg-gradient-to-r from-purple-700 via-green-800 to-indigo-900 shadow-xl rounded-lg p-6 flex items-center justify-between"
+    className="events bg-gradient-to-r from-purple-700 via-green-800 to-indigo-900 shadow-xl rounded-lg p-4 md:p-6 flex flex-col md:flex-row items-center justify-between"
     style={evestyle}
     initial="hidden"
     animate={controls}
-    variants={leftSlide} // Slide in from left
-    whileHover={{ scale: 1.05, boxShadow: "0px 0px 15px rgba(255,255,255,0.7)" }} // Hover effect
+    variants={leftSlide}
+    whileHover={{ scale: 1.05, boxShadow: "0px 0px 15px rgba(255,255,255,0.7)" }}
   >
     <img
-      src="/photos/celstia.jpg"
+      src="/photos/celestia.png"
       alt="Event"
-      style={{
-        width: "16%",
-        height: "100%",
-        borderRadius: "8px",
-        objectFit: "cover",
-        border: "0px solid white",
-        overflow : "scroll"
-      }}
+      className="w-3/4 md:w-1/4 h-40 md:h-full rounded-md object-cover border-0"
     />
     <div
+      className="w-full md:w-3/4 mt-4 md:mt-0 md:ml-6 text-orange-300 text-left"
       style={{
-        width: "80%",
-        margin: "0 16px",
-        color: "orange",
-        fontSize: "1.7rem",
-        textAlign: "left",
+        fontSize: "clamp(1rem, 1.5vw + 0.5rem, 1.7rem)",
         letterSpacing: "0.1rem",
       }}
     >
-      <h1 className="text-3xl font-bold mb-4">
+      <h1 className="text-2xl md:text-3xl font-bold mb-2 md:mb-4">
         <span>Get Ready for the Thunder</span>
       </h1>
-      <h2 className="text-2xl mb-4">
+      <h2 className="text-xl md:text-2xl mb-2 md:mb-4">
         <span>Soon Coming</span>
       </h2>
-      <h3 className="text-xl font-semibold italic text-yellow-400">
+      <h3 className="text-lg md:text-xl ml-0 font-semibold italic text-yellow-400">
         <span>TECHKNNOW CULTURAL FEST 2024</span>
       </h3>
-      <p className="mt-6 text-xxlg text-red-200">
+      <p className="mt-4 md:mt-6 text-base md:text-lg text-red-200">
         Unleash your creativity, explore new horizons, and be part of an unforgettable cultural fest filled with exciting performances, workshops, and competitions.
       </p>
     </div>
   </motion.div>
-  </a>
+</a>
+
 </div>
 
 <div className={styles.section}>
