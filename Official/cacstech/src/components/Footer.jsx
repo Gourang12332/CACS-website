@@ -85,7 +85,7 @@ export default function Footer() {
                 <a style={{textDecoration : "none"}} href="tel:0744-2667000" class="text-white" target="_blank" rel="noopener noreferrer">+91 78509 82929, +91 93136 77785</a>
                 </li>
                 <li>
-                <a style={{textDecoration : "none"}} href="https://g.page/MNITJ?share" class="text-white" target="_blank" rel="noopener noreferrer">MNIT Office, Jaipur, 302017</a>
+                <a style={{textDecoration : "none"}} href="https://maps.app.goo.gl/DQA68EG8MkB33AMd9" class="text-white" target="_blank" rel="noopener noreferrer">IIIT Kota, Jaipur, 325003</a>
                 </li>
               </ul>
             </MDBCol>
