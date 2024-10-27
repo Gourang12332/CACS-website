@@ -115,8 +115,8 @@ const evestyle = {
       imgsrc2= "/photos/jash2.0.jpg"
       imgsrc3= "/photos/yeshgensec.jpg"
       desc1 = "As President, Pawan Kumar leads CACS with vision and dedication, steering initiatives that inspire growth and collaboration. His leadership fosters an environment of innovation and inclusivity for all members."
-      desc2 = "Jash Desai, as Vice President, supports the club's mission by encouraging active participation and engagement. His efforts ensure that every project aligns with the society’s core values of excellence and community."
-      desc3 = "Yash Agarwal, our General Secretary, brings structure and organization to CACS, handling responsibilities with precision. His commitment keeps the club's operations smooth and focused on impactful achievements."
+      desc2 = "Jash Parmar, as Vice President, supports the club's mission by encouraging active participation and engagement. His efforts ensure that every project aligns with the society’s core values of excellence and community."
+      desc3 = "Yash Goyal, our General Secretary, brings structure and organization to CACS, handling responsibilities with precision. His commitment keeps the club's operations smooth and focused on impactful achievements."
     />
   </div>
 </div>
