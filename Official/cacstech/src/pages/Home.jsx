@@ -93,7 +93,7 @@ const evestyle = {
         <span>Soon Coming</span>
       </h2>
       <h3 className="text-lg md:text-xl ml-0 font-semibold italic text-yellow-400">
-        <span>TECHKNNOW CULTURAL FEST 2024</span>
+        <span> CULTURAL FEST 2024</span>
       </h3>
       <p className="mt-4 md:mt-6 text-base md:text-lg text-red-200">
         Unleash your creativity, explore new horizons, and be part of an unforgettable cultural fest filled with exciting performances, workshops, and competitions.
