@@ -54,7 +54,7 @@ export default function About() {
                     <div className="para">
                         <h2>Creative Arts and Cultural Society</h2>
                         <p className="intro" >
-                            The Cultural and Activity Society (CACS) is the beating heart of IIIT Kota's vibrant cultural scene. As a hub of creativity, expression, and collaboration it is responsible for the smooth conduction of the annual cultural festivals of IIIT Kota, and performs various events with coordination of different Clubs throughout the academic year promoting cultural awareness and build a sense of community
+                            The Creative Arts and Cultural Society (CACS) is the beating heart of IIIT Kota's vibrant cultural scene. As a hub of creativity, expression, and collaboration it is responsible for the smooth conduction of the annual cultural festivals of IIIT Kota, and performs various events with coordination of different Clubs throughout the academic year promoting cultural awareness and build a sense of community
                             <br /> <br /> To foster a vibrant and inclusive campus culture by celebrating diversity, creativity and student talent.
 
                         </p>
