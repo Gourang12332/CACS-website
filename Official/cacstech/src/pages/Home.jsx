@@ -90,7 +90,7 @@ const evestyle = {
         <span>Get Ready for the Thunder</span>
       </h1>
       <h2 className="text-xl md:text-2xl mb-2 md:mb-4">
-        <span>Soon Coming</span>
+        <span>Coming Soon</span>
       </h2>
       <h3 className="text-lg md:text-xl ml-0 font-semibold italic text-yellow-400">
         <span> CULTURAL FEST 2024</span>
