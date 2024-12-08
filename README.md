@@ -33,3 +33,11 @@ CACS is more than just a society; it's a family of passionate individuals who sh
 
 Conclusion
 Thank you for visiting the CACS website! We invite you to explore, participate, and be a part of our exciting journey as we celebrate creativity and cultural arts at IIIT Kota. Together, let’s create a community that inspires, innovates, and thrives on artistic expression.
+![image](https://github.com/user-attachments/assets/d2c300d3-ef64-44c0-8ce2-bad53388f562)
+
+
+
+![Screenshot 2024-12-08 102000](https://github.com/user-attachments/assets/2185518f-5a3d-445f-b8e7-1223cc1a0950)
+
+
+
